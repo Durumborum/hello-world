@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question and Answer CMS</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="cmsQA.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="cmsQAStyle.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="loginBar" class="col-sm">
+                <div id="loginBox" class="form-group">
+
+                    <input type="text" id="username" class="form-control" placeholder="Username"> 
+
+                    <button id="login" class="btn btn-outline-primary">Sign in</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="contentContainer" class="container hide">
+        
+        
+            
+    
+    
+    
+    
+        <div class="row">
+            <div class="col-sm border">
+
+                <div class="topBox">
+                        <p id="topBoxTitle">Create new question</p>
+                </div>
+
+                <form id="qaForm" action="#" method="post">
+                    
+                    <div id="questionBox" class="form-group">
+                        <label for="question">Question:</label><input type="text" id="question" class="form-control"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="answer1">Answer option 1:</label>
+                        <input type="text" id="answer1" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="answer2">Answer option 2:</label>
+                        <input type="text" id="answer2" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="answer3">Answer option 3:</label>
+                        <input type="text" id="answer3" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="answer4">Answer option 4:</label>
+                        <input type="text" id="answer4" class="form-control">
+                    </div>
+                    
+                    <p id="radioText">Please select the answer that is correct:</p>
+
+                    <div id="radioBox" class="form-check">
+                        
+                        
+
+                        <div class="form-check">
+                            <input type="radio" name="richtig" id="a1" class="form-check-input" value="">
+                            <label for="a1" id="labelA1" class="form-check-label">Answer option 1</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" name="richtig" id="a2" class="form-check-input" value="">
+                            <label for="a2" id="labelA2" class="form-check-label">Answer option 2</label>
+                        </div>  
+
+                        <div class="form-check">   
+                            <input type="radio" name="richtig" id="a3" class="form-check-input" value="">
+                            <label for="a3" id="labelA3" class="form-check-label">Answer option 3</label>
+                        </div> 
+
+                        <div class="form-check">
+                            <input type="radio" name="richtig" id="a4" class="form-check-input" value="">
+                            <label for="a4" id="labelA4" class="form-check-label">Answer option 4</label>
+                        </div>
+
+                    </div>
+
+                    
+
+
+                    <div>
+                        <button id="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="col-sm border outputBox">
+            
+                
+                    <div id="manageContent" class="topBox">
+                        <button id="showAll" class="btn btn-primary">Show all</button>
+                    </div>
+                
+                
+                <div id="displayAll">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

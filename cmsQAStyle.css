@@ -1,0 +1,106 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contentContainer {
+    margin-top: 44px;
+}
+
+hr {
+    margin-top: 0px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.question {
+    padding: 10px;
+    margin-top: 0px;
+    background: white;
+    transition: box-shadow 0.6s;
+}
+
+.question:hover {
+    
+    -webkit-box-shadow: inset 0px 0px 24px -19px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 24px -19px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 24px -19px rgba(0,0,0,1);
+}
+
+button {
+    margin-right: 5px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.errorTitle {
+    color: red;
+}
+
+.col-sm {
+    margin: 0px;
+    padding: 0px;
+}
+
+#login {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#loginBox p {
+    margin-top: 16px;
+    color: red;
+}
+
+#loginBox {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.welcomeText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#username {
+    max-width: 200px;
+}
+
+#radioBox {
+    margin-bottom: 10px;
+}
+
+#radioText {
+    margin-bottom: 10px;
+}
+
+#qaForm{
+    margin: 10px;
+}
+
+.topBox {
+    background: white;
+    border-bottom: 1px solid #CED4DA;
+    min-height: 55px;
+    position: relative;
+}
+
+#topBoxTitle {
+    margin-top: 16px;
+    margin-left: 10px;
+    position: absolute;
+    
+}
+
+#showAll {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+#deleteAll {
+    margin-top: 8px;
+}
